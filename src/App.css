@@ -25,23 +25,23 @@ header h1 {
 }
 
 .accordion .item:nth-child(odd) {
-  background-color: #ffd1da;
-  border-left: 10px solid #fba1b7;
+  background-color: #f9fbe7;
+  border-left: 10px solid #95bdff;
 }
 
 .accordion .item:nth-child(even) {
-  background-color: #fff0f5;
-  border-left: 10px solid #c8e4b2;
+  background-color: #e3f2c1;
+  border-left: 10px solid #99a98f;
 }
 
 .accordion .active:nth-child(odd) {
-  background-color: #fde4e8;
-  border-left: 15px solid #fba1b7;
+  background-color: #f9fbe7;
+  border-left: 15px solid #d2e9e9;
 }
 
 .accordion .active:nth-child(even) {
-  background-color: #e4e1e2;
-  border-left: 15px solid #c8e4b2;
+  background-color: #f6ffde;
+  border-left: 15px solid #c9dbb2;
 }
 
 .accordion .item .head,
@@ -85,7 +85,7 @@ header h1 {
   padding: 0 1rem 1rem 1rem;
   font-size: 1.5rem;
   color: #27374d;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .accordion .item .text,
@@ -93,8 +93,8 @@ header h1 {
   padding: 2rem 1rem;
   font-size: 1.3rem;
   color: #562b08;
-  font-weight: 600;
-  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-family: system-ui;
   text-align: justify;
 }
 
