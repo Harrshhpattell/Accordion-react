@@ -1,38 +1,112 @@
-.App {
+header h1 {
   text-align: center;
+  font-size: 3rem;
+  font-family: serif;
+  background-color: aliceblue;
+  margin: 0 0 1.5rem 0;
+  padding: 1.5rem;
+  color: #27374d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.accordion .item,
+.accordion .active {
+  width: 60%;
+  margin: 3px auto;
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 9px -2px #999999;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 750px) {
+  .accordion .item,
+  .accordion .active {
+    width: 80%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.accordion .item:nth-child(odd) {
+  background-color: #ffd1da;
+  border-left: 10px solid #fba1b7;
+}
+
+.accordion .item:nth-child(even) {
+  background-color: #fff0f5;
+  border-left: 10px solid #c8e4b2;
+}
+
+.accordion .active:nth-child(odd) {
+  background-color: #fde4e8;
+  border-left: 15px solid #fba1b7;
+}
+
+.accordion .active:nth-child(even) {
+  background-color: #e4e1e2;
+  border-left: 15px solid #c8e4b2;
+}
+
+.accordion .item .head,
+.accordion .active .head {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #7b7a7a;
+  justify-content: space-between;
+}
+.accordion .active .head {
+  color: #3d3d3d;
 }
 
-.App-link {
-  color: #61dafb;
+.open {
+  animation: open 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 normal none;
+}
+@keyframes open {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
+.close {
+  animation: close 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 normal none;
+}
+@keyframes close {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(90deg);
   }
+}
+
+.accordion .item .title,
+.accordion .active .title {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1.5rem;
+  color: #27374d;
+  font-family: cursive;
+}
+
+.accordion .item .text,
+.accordion .active .text {
+  padding: 2rem 1rem;
+  font-size: 1.3rem;
+  color: #562b08;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
+}
+
+footer h4 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: serif;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  margin-bottom: 0;
+  color: #27374d;
 }
